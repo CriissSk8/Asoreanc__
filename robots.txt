@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 User-agent: *
 Allow: /
 
@@ -19,26 +18,4 @@ Allow: /script.js
 Allow: /imagenes/
 
 # Allow access to documents
-=======
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://asoreanc.com/sitemap.xml
-
-# Disallow access to configuration files
-Disallow: /emailjs-config.js
-Disallow: /pqrs-emailjs.js
-Disallow: /.git/
-Disallow: /.vscode/
-
-# Allow access to CSS and JS files
-Allow: /styles.css
-Allow: /script.js
-
-# Allow access to images
-Allow: /imagenes/
-
-# Allow access to documents
->>>>>>> 080a31b35b9318db3359bb0b268f1bbd26fe2b0d
 Allow: /documentos/
