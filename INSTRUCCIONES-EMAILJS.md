@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Configuración de EmailJS para Sistema PQRS - ASOREANC
 
 ## 📧 ¿Qué es EmailJS?
