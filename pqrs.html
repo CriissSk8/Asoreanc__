@@ -43,7 +43,7 @@
       </nav>
 
       <!-- Botón menú móvil -->
-      <button id="mobile-menu-btn" class="lg:hidden text-green-700 hover:text-green-800 transition-colors">
+      <button id="mobile-menu-btn" class="lg:hidden text-green-700 hover:text-green-800 transition-colors" onclick="toggleMobileMenu()">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
@@ -127,15 +127,9 @@
     <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
   </header>
 
-  <section class="relative pt-32 pb-20 bg-gradient-to-br from-emerald-50 via-white to-blue-50 overflow-hidden">
-
-    <div class="absolute inset-0 overflow-hidden">
-      <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-200/30 to-emerald-300/20 rounded-full blur-3xl animate-pulse"></div>
-      <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-blue-200/30 to-blue-300/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-emerald-100/20 to-blue-100/20 rounded-full blur-3xl animate-pulse delay-500"></div>
-    </div>
+  <section class="relative pt-24 pb-16 bg-gradient-to-b from-green-50 to-blue-50">
     
-    <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+    <div class="max-w-7xl mx-auto px-6 text-center">
       <div class="animate-fadeInUp mb-16">
         
         <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight">
@@ -543,6 +537,40 @@
   
   <!-- Configuración de EmailJS -->
   <script src="emailjs-config.js"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: "fadeIn 1.5s ease-in-out both",
+            'spin-slow': 'spin 8s linear infinite',
+            'float': 'float 3s ease-in-out infinite',
+            'glow': 'glow 2s ease-in-out infinite alternate',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0, transform: 'translateY(20px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 20px rgba(16, 185, 129, 0.3)' },
+              '100%': { boxShadow: '0 0 30px rgba(16, 185, 129, 0.6)' },
+            }
+          },
+          boxShadow: {
+            '3xl': '0 35px 60px -12px rgba(0, 0, 0, 0.25)',
+          }
+        }
+      }
+    }
+
+    // Menú móvil manejado por script.js
+  </script>
   
   <script src="pqrs-emailjs.js"></script>
   <script src="script.js"></script>

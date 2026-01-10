@@ -44,7 +44,8 @@
       </nav>
 
       <!-- Botón menú móvil -->
-      <button id="mobile-menu-btn" class="lg:hidden text-green-700 hover:text-green-800 transition-colors">
+      <button id="mobile-menu-btn" class="lg:hidden text-green-700 hover:text-green-800 transition-colors"
+        onclick="toggleMobileMenu()">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
@@ -52,7 +53,8 @@
     </div>
 
     <!-- Menú móvil -->
-    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 bg-white shadow-2xl lg:hidden z-50" style="background-color: #ffffff !important; background: #ffffff !important;">
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-80 bg-white shadow-2xl lg:hidden z-50"
+      style="background-color: #ffffff !important; background: #ffffff !important;">
       <div class="p-6" style="background-color: #ffffff !important; background: #ffffff !important;">
         <!-- Header elegante de la sidebar -->
         <div class="sidebar-header">
@@ -72,50 +74,64 @@
               </svg>
             </button>
           </div>
-          
+
           <!-- Separador decorativo -->
           <div class="separator"></div>
         </div>
         <nav class="space-y-4">
           <a href="index.html" class="sidebar-link">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+              </path>
             </svg>
             <span>Inicio</span>
           </a>
           <a href="nosotros.html" class="sidebar-link">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+              </path>
             </svg>
             <span>Quiénes Somos</span>
           </a>
           <a href="servicios.html" class="sidebar-link active">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+              </path>
             </svg>
             <span>Servicios</span>
           </a>
           <a href="docs.html" class="sidebar-link">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+              </path>
             </svg>
             <span>Documentos</span>
           </a>
           <a href="equipo.html" class="sidebar-link">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z">
+              </path>
             </svg>
             <span>Nuestro Equipo</span>
           </a>
           <a href="noticias.html" class="sidebar-link">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z">
+              </path>
             </svg>
             <span>Noticias</span>
           </a>
           <a href="pqrs.html" class="sidebar-link pqrs-button">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+              </path>
             </svg>
             <span>PQRS</span>
           </a>
@@ -127,185 +143,171 @@
     <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
   </header>
 
-  <!-- Hero Section Servicios -->
-  <section class="relative pt-24 pb-16 bg-white">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <div class="animate-fadeInUp mb-16">
-        <h1 class="text-4xl md:text-6xl font-bold mb-8 leading-tight text-gray-800">
-          <span class="block">Nuestros</span>
-          <span class="block text-emerald-500">Servicios</span>
-        </h1>
-
-        <p class="text-xl text-gray-600 leading-relaxed mb-8 max-w-4xl mx-auto">
-          Ofrecemos servicios integrales de gestión de residuos sólidos, conectando rutas eficientes
-          con empresas comprometidas para crear un ecosistema de reciclaje sostenible.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#rutas"
-            class="bg-emerald-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-600 transition-all duration-300 shadow-lg">
-            Ver nuestras rutas
-          </a>
-          <a href="#empresas"
-            class="border-2 border-emerald-500 text-emerald-500 px-8 py-3 rounded-full font-semibold hover:bg-emerald-500 hover:text-white transition-all duration-300">
-            Empresas aliadas
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Rutas de Recolección -->
-  <section id="rutas" class="py-16 bg-gray-50">
+  <section id="rutas" class="py-16 bg-gray-50 pt-24">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16 animate-on-scroll">
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-          Rutas de <span class="text-emerald-500">Recolección</span>
-        </h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Cubrimos toda la ciudad con rutas estratégicamente diseñadas para maximizar 
-          la eficiencia y el impacto ambiental positivo.
-        </p>
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+        Rutas de <span class="text-emerald-500">Recolección</span>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Cubrimos toda la ciudad con rutas estratégicamente diseñadas para maximizar
+        la eficiencia y el impacto ambiental positivo.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Ruta Norte -->
+      <div class="group animate-on-scroll">
+        <div
+          class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-emerald-500">
+          <div class="flex items-center mb-6">
+            <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mr-4">
+              <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800">Ruta Norte</h3>
+          </div>
+          <div class="space-y-3 text-gray-600 leading-relaxed">
+            <p><strong>Barrios:</strong> La Esperanza, Villa Nueva</p>
+            <p><strong>Días:</strong> Lunes, Miércoles, Viernes</p>
+            <p><strong>Horario:</strong> 6:00 AM - 12:00 PM</p>
+            <p><strong>Materiales:</strong> Papel, cartón, plástico, vidrio</p>
+          </div>
+          <div class="mt-6 p-4 bg-emerald-50 rounded-lg">
+            <p class="text-sm text-emerald-600 font-semibold">📞 Contacto: +57 301 234 5678</p>
+          </div>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Ruta Norte -->
-        <div class="group animate-on-scroll">
-          <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-emerald-500">
-            <div class="flex items-center mb-6">
-              <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mr-4">
-                <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800">Ruta Norte</h3>
+      <!-- Ruta Centro -->
+      <div class="group animate-on-scroll">
+        <div
+          class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-blue-500">
+          <div class="flex items-center mb-6">
+            <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mr-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                </path>
+              </svg>
             </div>
-            <div class="space-y-3 text-gray-600 leading-relaxed">
-              <p><strong>Barrios:</strong> La Esperanza, Villa Nueva</p>
-              <p><strong>Días:</strong> Lunes, Miércoles, Viernes</p>
-              <p><strong>Horario:</strong> 6:00 AM - 12:00 PM</p>
-              <p><strong>Materiales:</strong> Papel, cartón, plástico, vidrio</p>
-            </div>
-            <div class="mt-6 p-4 bg-emerald-50 rounded-lg">
-              <p class="text-sm text-emerald-600 font-semibold">📞 Contacto: +57 301 234 5678</p>
-            </div>
+            <h3 class="text-xl font-bold text-gray-800">Ruta Centro</h3>
+          </div>
+          <div class="space-y-3 text-gray-600 leading-relaxed">
+            <p><strong>Barrios:</strong> Centro, La Candelaria, San Antonio</p>
+            <p><strong>Días:</strong> Martes, Jueves, Sábado</p>
+            <p><strong>Horario:</strong> 7:00 AM - 1:00 PM</p>
+            <p><strong>Materiales:</strong> Papel, cartón, metales, electrónicos</p>
+          </div>
+          <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+            <p class="text-sm text-blue-600 font-semibold">📞 Contacto: +57 301 345 6789</p>
           </div>
         </div>
+      </div>
 
-        <!-- Ruta Centro -->
-        <div class="group animate-on-scroll">
-          <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-blue-500">
-            <div class="flex items-center mb-6">
-              <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mr-4">
-                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800">Ruta Centro</h3>
+      <!-- Ruta Sur -->
+      <div class="group animate-on-scroll">
+        <div
+          class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-purple-500">
+          <div class="flex items-center mb-6">
+            <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mr-4">
+              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 5a2 2 0 012-2h4a2 2 0 012 2v0H8v0z"></path>
+              </svg>
             </div>
-            <div class="space-y-3 text-gray-600 leading-relaxed">
-              <p><strong>Barrios:</strong> Centro, La Candelaria, San Antonio</p>
-              <p><strong>Días:</strong> Martes, Jueves, Sábado</p>
-              <p><strong>Horario:</strong> 7:00 AM - 1:00 PM</p>
-              <p><strong>Materiales:</strong> Papel, cartón, metales, electrónicos</p>
-            </div>
-            <div class="mt-6 p-4 bg-blue-50 rounded-lg">
-              <p class="text-sm text-blue-600 font-semibold">📞 Contacto: +57 301 345 6789</p>
-            </div>
+            <h3 class="text-xl font-bold text-gray-800">Ruta Sur</h3>
+          </div>
+          <div class="space-y-3 text-gray-600 leading-relaxed">
+            <p><strong>Barrios:</strong> San José, La Paz, Villa del Sur</p>
+            <p><strong>Días:</strong> Lunes, Miércoles, Viernes</p>
+            <p><strong>Horario:</strong> 1:00 PM - 6:00 PM</p>
+            <p><strong>Materiales:</strong> Plástico, vidrio, textiles</p>
+          </div>
+          <div class="mt-6 p-4 bg-purple-50 rounded-lg">
+            <p class="text-sm text-purple-600 font-semibold">📞 Contacto: +57 301 456 7890</p>
           </div>
         </div>
+      </div>
 
-        <!-- Ruta Sur -->
-        <div class="group animate-on-scroll">
-          <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-purple-500">
-            <div class="flex items-center mb-6">
-              <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center mr-4">
-                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v0H8v0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800">Ruta Sur</h3>
+      <!-- Ruta Industrial -->
+      <div class="group animate-on-scroll">
+        <div
+          class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-orange-500">
+          <div class="flex items-center mb-6">
+            <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mr-4">
+              <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                </path>
+              </svg>
             </div>
-            <div class="space-y-3 text-gray-600 leading-relaxed">
-              <p><strong>Barrios:</strong> San José, La Paz, Villa del Sur</p>
-              <p><strong>Días:</strong> Lunes, Miércoles, Viernes</p>
-              <p><strong>Horario:</strong> 1:00 PM - 6:00 PM</p>
-              <p><strong>Materiales:</strong> Plástico, vidrio, textiles</p>
-            </div>
-            <div class="mt-6 p-4 bg-purple-50 rounded-lg">
-              <p class="text-sm text-purple-600 font-semibold">📞 Contacto: +57 301 456 7890</p>
-            </div>
+            <h3 class="text-xl font-bold text-gray-800">Ruta Industrial</h3>
+          </div>
+          <div class="space-y-3 text-gray-600 leading-relaxed">
+            <p><strong>Zonas:</strong> Parque Industrial, Zona Franca</p>
+            <p><strong>Días:</strong> Martes, Jueves</p>
+            <p><strong>Horario:</strong> 8:00 AM - 4:00 PM</p>
+            <p><strong>Materiales:</strong> Cartón industrial, metales, plásticos</p>
+          </div>
+          <div class="mt-6 p-4 bg-orange-50 rounded-lg">
+            <p class="text-sm text-orange-600 font-semibold">📞 Contacto: +57 301 567 8901</p>
           </div>
         </div>
+      </div>
 
-        <!-- Ruta Industrial -->
-        <div class="group animate-on-scroll">
-          <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-orange-500">
-            <div class="flex items-center mb-6">
-              <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mr-4">
-                <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800">Ruta Industrial</h3>
+      <!-- Ruta Comercial -->
+      <div class="group animate-on-scroll">
+        <div
+          class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-teal-500">
+          <div class="flex items-center mb-6">
+            <div class="w-14 h-14 bg-teal-100 rounded-2xl flex items-center justify-center mr-4">
+              <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+              </svg>
             </div>
-            <div class="space-y-3 text-gray-600 leading-relaxed">
-              <p><strong>Zonas:</strong> Parque Industrial, Zona Franca</p>
-              <p><strong>Días:</strong> Martes, Jueves</p>
-              <p><strong>Horario:</strong> 8:00 AM - 4:00 PM</p>
-              <p><strong>Materiales:</strong> Cartón industrial, metales, plásticos</p>
-            </div>
-            <div class="mt-6 p-4 bg-orange-50 rounded-lg">
-              <p class="text-sm text-orange-600 font-semibold">📞 Contacto: +57 301 567 8901</p>
-            </div>
+            <h3 class="text-xl font-bold text-gray-800">Ruta Comercial</h3>
+          </div>
+          <div class="space-y-3 text-gray-600 leading-relaxed">
+            <p><strong>Zonas:</strong> Centro Comercial, Mercados, Oficinas</p>
+            <p><strong>Días:</strong> Lunes a Viernes</p>
+            <p><strong>Horario:</strong> 5:00 AM - 8:00 AM</p>
+            <p><strong>Materiales:</strong> Papel, cartón, plástico, orgánicos</p>
+          </div>
+          <div class="mt-6 p-4 bg-teal-50 rounded-lg">
+            <p class="text-sm text-teal-600 font-semibold">📞 Contacto: +57 301 678 9012</p>
           </div>
         </div>
+      </div>
 
-        <!-- Ruta Comercial -->
-        <div class="group animate-on-scroll">
-          <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-teal-500">
-            <div class="flex items-center mb-6">
-              <div class="w-14 h-14 bg-teal-100 rounded-2xl flex items-center justify-center mr-4">
-                <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800">Ruta Comercial</h3>
+      <!-- Ruta Especial -->
+      <div class="group animate-on-scroll">
+        <div
+          class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-red-500">
+          <div class="flex items-center mb-6">
+            <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center mr-4">
+              <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
             </div>
-            <div class="space-y-3 text-gray-600 leading-relaxed">
-              <p><strong>Zonas:</strong> Centro Comercial, Mercados, Oficinas</p>
-              <p><strong>Días:</strong> Lunes a Viernes</p>
-              <p><strong>Horario:</strong> 5:00 AM - 8:00 AM</p>
-              <p><strong>Materiales:</strong> Papel, cartón, plástico, orgánicos</p>
-            </div>
-            <div class="mt-6 p-4 bg-teal-50 rounded-lg">
-              <p class="text-sm text-teal-600 font-semibold">📞 Contacto: +57 301 678 9012</p>
-            </div>
+            <h3 class="text-xl font-bold text-gray-800">Ruta Especial</h3>
           </div>
-        </div>
-
-        <!-- Ruta Especial -->
-        <div class="group animate-on-scroll">
-          <div class="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-l-4 border-red-500">
-            <div class="flex items-center mb-6">
-              <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center mr-4">
-                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800">Ruta Especial</h3>
-            </div>
-            <div class="space-y-3 text-gray-600 leading-relaxed">
-              <p><strong>Servicios:</strong> Recolección a domicilio, eventos</p>
-              <p><strong>Días:</strong> Bajo solicitud</p>
-              <p><strong>Horario:</strong> Flexible</p>
-              <p><strong>Materiales:</strong> Todos los tipos de reciclables</p>
-            </div>
-            <div class="mt-6 p-4 bg-red-50 rounded-lg">
-              <p class="text-sm text-red-600 font-semibold">📞 Contacto: +57 301 789 0123</p>
-            </div>
+          <div class="space-y-3 text-gray-600 leading-relaxed">
+            <p><strong>Servicios:</strong> Recolección a domicilio, eventos</p>
+            <p><strong>Días:</strong> Bajo solicitud</p>
+            <p><strong>Horario:</strong> Flexible</p>
+            <p><strong>Materiales:</strong> Todos los tipos de reciclables</p>
+          </div>
+          <div class="mt-6 p-4 bg-red-50 rounded-lg">
+            <p class="text-sm text-red-600 font-semibold">📞 Contacto: +57 301 789 0123</p>
           </div>
         </div>
       </div>
@@ -326,154 +328,195 @@
       </div>
 
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-        
+
         <!-- Empresa 1 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <!-- Aquí puedes poner el logo real: <img src="imagenes/empresa1.png" alt="EcoPapel" class="w-16 h-16 object-contain"> -->
-              <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">EP</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <!-- Área para logo - Más grande -->
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa1.png" alt="Harineras del Valle" class="w-28 h-28 object-contain">
+              <!-- Fallback si no hay imagen -->
+              <div class="hidden w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">HDV</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Harineras del Valle</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Empresa líder en reciclaje de papel y cartón, comprometida con la sostenibilidad ambiental.</p>
+            <!-- Contenido -->
+            <div class="p-4 flex flex-col flex-grow text-center items-center justify-center min-h-16">
+              <h3 class="text-lg font-bold text-blue-600">
+                Harineras del Valle</h3>
+            </div>
           </div>
         </div>
 
         <!-- Empresa 2 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">PV</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa2.png" alt="Hotel F25" class="w-28 h-28 object-contain">
+              <div class="hidden w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">HF25</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Hotel F25.</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Especialistas en transformación de plásticos reciclados para crear nuevos productos.</p>
+            <div class="p-6 flex flex-col flex-grow text-center">
+              <h3 class="text-lg font-bold text-blue-600">
+                Hotel F25</h3>
+            </div>
           </div>
         </div>
 
         <!-- Empresa 3 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">MR</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa3.png" alt="Clinica Sharon" class="w-28 h-28 object-contain">
+              <div class="hidden w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">CS</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Clinica Sharon.</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Recuperación y procesamiento de metales ferrosos y no ferrosos para la industria.</p>
+            <div class="p-6 flex flex-col flex-grow text-center">
+              <h3 class="text-lg font-bold text-blue-600">
+                Clinica Sharon</h3>
+            </div>
           </div>
         </div>
 
         <!-- Empresa 4 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">TV</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa4.png" alt="Urocadiz" class="w-28 h-28 object-contain">
+              <div class="hidden w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">UR</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Urocadiz</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Gestión responsable de residuos electrónicos y equipos tecnológicos.</p>
+            <div class="p-6 flex flex-col flex-grow text-center">
+              <h3 class="text-lg font-bold text-blue-600">
+                Urocadiz</h3>
+            </div>
           </div>
         </div>
 
         <!-- Empresa 5 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <div class="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">VF</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa5.png" alt="Casa luker" class="w-28 h-28 object-contain">
+              <div class="hidden w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">CL</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Casa luker</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Procesamiento y reutilización de vidrio para crear productos sostenibles.</p>
+            <div class="p-6 flex flex-col flex-grow text-center">
+              <h3 class="text-lg font-bold text-blue-600">Casa
+                luker</h3>
+            </div>
           </div>
         </div>
 
         <!-- Empresa 6 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">TS</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa6.png" alt="Nestle" class="w-28 h-28 object-contain">
+              <div class="hidden w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">NS</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Nestle</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Reciclaje de textiles y ropa para reducir el impacto ambiental de la industria.</p>
+            <div class="p-6 flex flex-col flex-grow text-center">
+              <h3 class="text-lg font-bold text-emerald-600">
+                Nestle</h3>
+            </div>
           </div>
         </div>
 
         <!-- Empresa 7 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">EC</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa7.png" alt="Uniminuto" class="w-28 h-28 object-contain">
+              <div class="hidden w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">UM</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Uniminuto</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Fabricación de empaques sostenibles a partir de cartón reciclado.</p>
+            <div class="p-6 flex flex-col flex-grow text-center">
+              <h3 class="text-lg font-bold text-emerald-600">
+                Uniminuto</h3>
+            </div>
           </div>
         </div>
 
         <!-- Empresa 8 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <div class="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">BR</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa8.png" alt="Sumatec" class="w-28 h-28 object-contain">
+              <div class="hidden w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">SM</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Sumatec</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Gestión y compostaje de residuos orgánicos para agricultura sostenible.</p>
+            <div class="p-6 flex flex-col flex-grow text-center">
+              <h3 class="text-lg font-bold text-emerald-600">
+                Sumatec</h3>
+            </div>
           </div>
         </div>
 
         <!-- Empresa 9 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">EV</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa9.png" alt="Infibagué" class="w-28 h-28 object-contain">
+              <div class="hidden w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">IF</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Infibagué</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Reciclaje de componentes de energías renovables y baterías.</p>
+            <div class="p-6 flex flex-col flex-grow text-center">
+              <h3 class="text-lg font-bold text-emerald-600">
+                Infibagué</h3>
+            </div>
           </div>
         </div>
 
         <!-- Empresa 10 -->
-        <div class="group animate-on-scroll text-center">
-          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-            <div class="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-              <div class="w-12 h-12 bg-gray-600 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-sm">RM</span>
+        <div class="group animate-on-scroll">
+          <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden h-full flex flex-col">
+            <div
+              class="w-full h-40 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6 group-hover:scale-105 transition-transform duration-300">
+              <img src="imagenes/empresa10.png" alt="Osmosis" class="w-28 h-28 object-contain">
+              <div class="hidden w-12 h-12 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span class="text-white font-bold text-sm">OS</span>
               </div>
             </div>
-            <h3 class="text-lg font-bold text-gray-800 mb-2">Osmosis</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">Gestión integral de residuos mixtos con tecnología avanzada de separación.</p>
+            <div class="p-6 flex flex-col flex-grow text-center">
+              <h3 class="text-lg font-bold text-emerald-600">
+                Osmosis</h3>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Llamada a la acción -->
-      <div class="text-center mt-16">
-        <div class="bg-gray-50 rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">¿Tu empresa quiere ser parte del cambio?</h3>
-          <p class="text-gray-600 mb-6">Únete a nuestras empresas colaboradoras y contribuye a un futuro más sostenible</p>
-          <a href="pqrs.html" class="bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block">
-            Contáctanos
-          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Sección de Impacto Ambiental -->
-  
+
 
   <script>
     tailwind.config = {
@@ -481,12 +524,26 @@
         extend: {
           animation: {
             fadeIn: "fadeIn 1.5s ease-in-out both",
+            'spin-slow': 'spin 8s linear infinite',
+            'float': 'float 3s ease-in-out infinite',
+            'glow': 'glow 2s ease-in-out infinite alternate',
           },
           keyframes: {
             fadeIn: {
               '0%': { opacity: 0, transform: 'translateY(20px)' },
               '100%': { opacity: 1, transform: 'translateY(0)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 20px rgba(16, 185, 129, 0.3)' },
+              '100%': { boxShadow: '0 0 30px rgba(16, 185, 129, 0.6)' },
             }
+          },
+          boxShadow: {
+            '3xl': '0 35px 60px -12px rgba(0, 0, 0, 0.25)',
           }
         }
       }
@@ -613,4 +670,5 @@
   </footer>
 
 </body>
+
 </html>
